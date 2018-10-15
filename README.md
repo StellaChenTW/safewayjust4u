@@ -10,4 +10,4 @@ Instruction
 6. It will automatically scroll down the page to add all coupons to your account!
 7. popup window shows how many coupons has added 
 8. close the popup window 
-9. well down!
+9. well done!
