@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Safeway</title>
+
+</head>
+<body>
+	<p>
+	 This is <a href="javascript:(function(){
+	 
+		var scroll = setInterval(function(){window.scrollTo(0, document.body.scrollHeight)},2000);
+		var itemsAdded = document.querySelectorAll('.lt-coupons .lt-offer-added .lt-footer .lt-added');
+		var items = document.querySelectorAll('.lt-coupons .lt-offer .lt-add-offer-gallery span');
+
+		if(items.length<itemsAdded.length){
+			setTimeout(timeOut(),6000)
+		}else{
+			setTimeout(timeOut,50000)
+		};
+		function timeOut(){
+			clearInterval(scroll);
+			var items = document.querySelectorAll('.lt-coupons .lt-offer .lt-add-offer-gallery span');
+			for (var i = 0; i < items.length; i++) {
+		    	items[i].click();
+		    	console.log(i);
+		 	 }
+		    	alert('total: '+i+'  were added!')
+		}
+	
+	})()"> Safeway bookmarklet</a> 
+
+</p>  
+<div>
+</body>
+<script>
+</script>
+
+</html>
